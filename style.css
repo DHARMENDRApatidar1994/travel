@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    width: 100vw;
+    height: 100%;
+    background-image: url(dotted.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    justify-content:space-between ;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 2vmax;
+    align-items: center;
+    
+}
+.mobile-nav{
+    display: none;
+}
+.nav-left ,li {
+    display: flex;
+    margin-left: 2.2vmax;
+    cursor: pointer;
+
+    
+}
+.nav-left :first-child{
+    background-color: rgb(6, 6, 49);
+    margin-top: -1.2vmax;
+    padding: 1vmax;
+    padding-top: 1vmax;
+    color: white;
+}
+.nav-right{
+    display: flex;
+    margin-right: 2vmax;
+    cursor: pointer;
+}
+.nav-right i{
+    font-size: 3vmax;
+    padding-top: 0.8vmax;
+}
+.mob{
+    display: none;
+}
+
+ .bg h6{
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    font-size: 1.2vmax;
+
+}
+.matter{
+    width: 35vw;
+    height: 40%;
+    margin-top: 5vmax;
+    margin-left: 5vmax;
+    
+}
+.matter h1{
+    /* width: 35vmax; */
+    font-size: 14vmax;
+    float: right;
+}
+.matter h2{
+
+    font-size: 3vmax;
+    margin-top: -3.5vmax;
+    letter-spacing: 2vmax;
+    float: right;
+    /* margin-left: 0.5vmax; */
+}
+.matter p{
+    width: 35vw;
+    font-size: 1.2vmax;
+    float: right;
+}
+.matter button{
+    height: 15%;
+    font-weight: 700;
+    padding: 0vmax 1.5vmax;
+    border: 0.2vmax solid rgb(53, 54, 58);
+    float: right;
+    margin-top: 1.5vmax;
+    cursor: pointer;
+}
+.image{
+    display: flex;
+    margin-left: 45vw;
+    cursor: pointer;
+}
+.image img{
+    width: 15vw;
+    height:28.9vmax ;
+    margin-top:-27.3vmax ;
+    margin-right: 2vmax;
+    cursor: pointer;
+}
+.image label{
+    margin-top: -5vmax;
+    
+    
+}
+.bottom{
+    display: flex;
+    width: 100vw;
+    height: 15%;
+    background-color: rgb(16, 124, 151);
+    margin-top: 4.1vh;
+    line-height: 15vh;
+    color: black;
+    position: relative;
+
+}
+.bottom i{
+    margin: 2.3vmax 0vmax 4vmax 4vmax;
+    background-color: white;
+    padding: 0.6vmax 1vmax 3vmax 1vmax;
+    align-items: center;
+    cursor: pointer;
+
+}
+.bottom h4{
+    background-color:rgb(5, 19, 63);
+    padding: 0vmax 1vmax;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    
+.mobile-nav{
+    display: flex;
+    margin-left: 2.2vmax;
+    font-size: 3vmax;
+}
+.nav-left ,li {
+    display: none;
+
+    
+}
+.mob{
+    display: initial;
+    background-color:rgb(6, 6, 49);
+    width: 40%;
+    height: 40%;
+    
+    z-index: 999;
+    transform: translateX(-110%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    color: white;
+
+}
+.mob li{
+    display: initial;
+   
+}
+ .bg h6{
+    
+    right: 4%;
+
+}
+.matter{
+    width: 90vw;
+    height: 35%;
+    margin-top: 1vmax;
+    /* margin-left: 5vmax; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.matter h1{
+    /* width: 35vmax; */
+    font-size: 14vmax;
+    /* float: right; */
+    margin-bottom:1vmax ;
+}
+.matter h2{
+
+    font-size: 3vmax;
+    margin-bottom: 1vmax;
+    letter-spacing: 2vmax;
+    /* float: right; */
+    margin-left: 0.5vmax;
+}
+.matter p{
+    width: 80vw;
+    font-size: 2vmax;
+    margin-bottom: 1vmax;
+    /* float: right; */
+}
+.matter button{
+    height: 12%;
+    font-weight: 700;
+    padding: 1vmax 1.5vmax;
+    border: 0.2vmax solid rgb(53, 54, 58);
+    /* float: right; */
+    margin-top: 1.5vmax;
+    margin-left: 2vmax;
+    cursor: pointer;
+}
+.bg .image{
+    width: 90vw;
+    height: 38%;
+    /* background-color: red; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vmax;
+    margin-left: 5vmax;
+
+}
+.image img{
+    width: 25vw;
+    height: 80%;
+    margin-top: 1vmax;
+}
+.image label{
+    margin-top: -5vmax;
+    
+    
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 12%;
+    background-color: rgb(16, 124, 151);
+    margin-top: 0vmax;
+    /* line-height: 10vh; */
+    color: black;
+    position: relative;
+
+}
+.bottom i{
+    width: 12vw;
+    /* margin: 2.3vmax 0vmax 4vmax 4vmax; */
+    background-color: white;
+    /* padding: 1vmax 1vmax 1vmax 1vmax; */
+    /* align-items: center; */
+    font-size: 4vmax;
+    margin-right: 0.2vmax;
+    cursor: pointer;
+
+}
+.bottom h4{
+    height: 100%;
+    background-color:rgb(5, 19, 63);
+    /* padding: 0vmax 1vmax; */
+    margin-left: 0vmax;
+    text-align: center;
+    color: white;
+}
+}
